@@ -1,0 +1,60 @@
+public class ArithmeticCalculator {
+
+    // Function to perform operations
+    public static void performCalculation(Decimal num1, Decimal num2) {
+        
+        System.debug('--- Arithmetic Calculator ---');
+        System.debug('First Number: ' + num1);
+        System.debug('Second Number: ' + num2);
+
+        // Addition
+        System.debug('Addition: ' + (num1 + num2));
+
+        // Subtraction
+        System.debug('Subtraction: ' + (num1 - num2));
+
+        // Multiplication
+        System.debug('Multiplication: ' + (num1 * num2));
+
+        // Division with safety check
+        if (num2 != 0) {
+            System.debug('Division: ' + (num1 / num2));
+        } else {
+            System.debug('Division by zero is not allowed.');
+        }
+    }
+}
+
+//ArithmeticCalculator.performCalculation(25, 5);
+
+
+
+public class StudentInfo {
+
+    // Method to display student details
+    public static void displayStudent(String name, Integer age, String studentId, String course) {
+        System.debug('--- Student Information ---');
+        System.debug('Name: ' + name);
+        System.debug('Age: ' + age);
+        System.debug('Student ID: ' + studentId);
+        System.debug('Course: ' + course);
+    }
+}
+
+//StudentInfo.displayStudent('Alice Johnson', 20, 'STU102', 'Computer Science');
+
+
+public class EmployeeInfo {
+
+    // Method to display employee details
+    public static void displayEmployee(String name, String employeeId, String department, Decimal salary) {
+        System.debug('--- Employee Information ---');
+        System.debug('Name: ' + name);
+        System.debug('Employee ID: ' + employeeId);
+        System.debug('Department: ' + department);
+        System.debug('Salary: ' + salary);
+    }
+}
+
+// EmployeeInfo.displayEmployee('John Smith', 'EMP567', 'Sales', 55000);
+
